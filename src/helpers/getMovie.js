@@ -2,7 +2,7 @@ const api_key = '83a27480';
 
 const getMovies = async (title, year, type) => {
     // Configuramos la url con la api_key, el titulo, año y tipo
-    const url = `http://www.omdbapi.com/?apikey=${api_key}&s=${title}&y=${year}&type=${type}`;
+    const url = `https://www.omdbapi.com/?apikey=${api_key}&s=${title}&y=${year}&type=${type}`;
     // Obtenemos los resultados de la api
     const response = await fetch(url);
     // Parseamos los resultados a JSON
