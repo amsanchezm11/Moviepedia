@@ -42,6 +42,8 @@ const Header = ({ setMovies }) => {
                         id="year"
                         className="form-control me-2"
                         type="number"
+                        min={0}
+                        step={1}
                         placeholder="Año"
                         aria-label="Año"
                         value={year}
